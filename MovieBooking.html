@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development CA1</title>
+    <link rel="stylesheet" href="webdevca1.css">
+    <script src="movie_api.js" defer></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){ send_movie_api('file:///Users/aleksey/Desktop/applied%20software%20development/term%202/web%20dev/webdevCA1/MovieBooking.html');});
+    </script>
+    <div class = "movie_header">
+      <header>
+        <div class="logo">
+         <img src="/Users/aleksey/Desktop/applied software development/term 2/web dev/webdevCA1/images/logo.png" class="logo">
+        </div>
+        <div class="header-right">
+          <a style="font-size:20px; font-family:verdana;" href="webdevCA1.html">Home</a>
+          <a style="font-size:20px; font-family:verdana;" href="Contactus.html">Contact us</a>
+          <a style="font-size:20px; font-family:verdana;" href="about.html">About us</a>
+        </div>
+      </header>
+    </div>
+    </head>
+
+
+  <div class="booking_container">
+    <h1 style="font-size:30px; font-family:verdana;" style=>Register</h1>
+    <p style="font-size:20px; font-family:verdana;">Please fill in this form to book your seating for the movie you'd like to see.</p>
+    <hr>
+
+    <label style="font-size:20px; font-family:verdana;" for="email"><b>Email:</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <hr>
+
+    <label style="font-size:20px; font-family:verdana;" for="days"><b>Choose a time and date:</b></label>
+    <br>
+  
+    <input type="datetime-local"
+           value="2023-01-01T00:00"/>
+
+    <hr>
+
+    <label style="font-size:20px; font-family:verdana;" for="seats"><b>Choose a seating:</b></label>
+    <select name="seating" id="seating">
+      <option value="seating1">Regular seats 5.99€ </option>
+      <option value="seating2">V.I.P seats 6.99€</option>
+      <option value="seating3">Premium seats 11.99€</option>
+    </select>
+
+<hr>
+
+    <label style="font-size:20px; font-family:verdana;" for="card"><b>Enter Credit Card Information</b></label>
+    <br>
+    <br>
+    <input style="font-size:15px; font-family:verdana;" type="cardinfo" placeholder="Enter Cardholder Name" name="cardname" id="cardname" required>
+    <br>
+    <input style="font-size:15px; font-family:verdana;" type="cardinfo" placeholder="Enter Number" name="cardnumber" id="cardnumber" required>
+    <br>
+    <input style="font-size:15px; font-family:verdana;" type="cardinfo" placeholder="Enter Expiry Date" name="carddate" id="carddate" required>
+    <br>
+    <input style="font-size:15px; font-family:verdana;" type="cardinfo" placeholder="Enter CVC" name="cardCVC" id="cardCVC" required>
+
+<br>
+
+  </div>
+
+<div class = "booking_footer">
+  <footer>
+    <button style="font-size:20px; font-family:verdana;" type="submit" class="bookingbtn">Book tickets</button>
+  </footer>
+</div>
+
+
+</body>
